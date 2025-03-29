@@ -1,0 +1,5 @@
+Flammability Equations:
+
+LFLt = LFL25 + 0.75/dH (T-25)
+
+UFLt = UFL25 + 0.75/dH (T-25)
