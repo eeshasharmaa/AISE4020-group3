@@ -1,4 +1,9 @@
-import numpy as np
-import pandas as pd
+# Import necessary libraries
+import numpy as np  # For numerical operations
+import pandas as pd  # For data manipulation
 
-myData = pd.read_csv("smoke_detection_iot.csv")
+# Load the dataset
+# Ensure the CSV file is in the correct directory or provide the full path
+myData = pd.read_csv("smoke_detection_iot.csv")  # Replace with the actual file path if needed
+
+# myData is now a DataFrame containing sensor readings (e.g., temperature, humidity, gas levels)
