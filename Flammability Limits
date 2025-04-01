@@ -1,5 +1,13 @@
-Flammability Equations:
+# Flammability Equations:
+# These equations adjust the Lower and Upper Flammability Limits (LFL and UFL) 
+# based on temperature changes. This helps determine the risk of fire hazards 
+# in varying environmental conditions.
 
-LFLt = LFL25 + 0.75/dH (T-25)
+# LFLt (Lower Flammability Limit at temperature T)
+# UFLt (Upper Flammability Limit at temperature T)
+# LFL25, UFL25: Flammability limits at 25°C (standard reference)
+# dH: Enthalpy change (heat of combustion, energy needed for ignition)
+# T: Temperature in °C
 
-UFLt = UFL25 + 0.75/dH (T-25)
+LFLt = LFL25 + (0.75 / dH) * (T - 25)  # Adjusted LFL based on temperature variation
+UFLt = UFL25 + (0.75 / dH) * (T - 25)  # Adjusted UFL based on temperature variation
